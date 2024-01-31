@@ -1,20 +1,10 @@
-#include <main.h>
+#include "main.h"
 /**
- *  * main - Entry point
- *   *
- *    * Return: Always 0 (Success)
+ * function that takes a pointer to an int as param
+ * Return 0.
  */
-int main(void)
-{
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
 
-	return (0);
+void reset_to_98(int *n)
+{
+*n = 98;
 }
