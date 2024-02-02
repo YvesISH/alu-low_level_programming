@@ -1,22 +1,24 @@
+#include <stdlib.h>
 #include <stdio.h>
-
-/** 
- * main -m  lists all the naturalnumbers below 1024
- *
- * Return: Always 0.
+/**
+ * main - main block.
+ * Return: 0
  */
 
 int main(void)
 {
-	int i, sum = 0;
+int c = 0;
+int sum = 0;
 
-	for (i = 0; i < 1024; i++)
-	{
-		if ((i % 3) == 0 || (i % 5) == 0)
-			sum += i;
-	}
+while (c < 1024)
+{
+if (c % 3 == 0 || c % 5 == 0)
+{
+sum += c;
+}
 
-	printf("%d\n", sum);
-
-	return (0);
+c++;
+}
+printf("%i\n", sum);
+return (0);
 }
